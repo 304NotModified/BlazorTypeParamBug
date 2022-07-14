@@ -1,0 +1,7 @@
+﻿@typeparam T where T:Blazor_repo.Pages.IMyInterface
+<h3>MyComponent1: @Item?.Name</h3>
+
+@code {
+	[Parameter]
+	public T? Item { get; set; }
+}
